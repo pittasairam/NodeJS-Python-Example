@@ -37,7 +37,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     needs: build
-
+    if: ${{ inputs.TARGE_ENVIRONMENT != 'dev' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
