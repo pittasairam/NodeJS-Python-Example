@@ -22,9 +22,8 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: python -m pip install --upgrade pip
+          #pip install -r requirements.txt
 
       - name: Run build step (if any)
         run: echo "Python build step (optional)"
