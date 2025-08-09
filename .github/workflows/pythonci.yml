@@ -96,4 +96,5 @@ jobs:
   call-reusable:
     name: Call Reusable Workflow
     needs: build
-    uses: ./.github/workflows/reused.yml
+    uses: ./.github/workflows/reuseable.yml
+
